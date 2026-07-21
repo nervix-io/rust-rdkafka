@@ -107,7 +107,11 @@ extern crate sasl2_sys;
 #[cfg(feature = "libz-sys")]
 extern crate libz_sys;
 
-#[cfg(any(feature = "curl-sys", feature = "curl-static"))]
+#[cfg(any(
+    feature = "curl",
+    feature = "curl-rustls",
+    feature = "curl-static"
+))]
 extern crate curl_sys;
 
 #[cfg(feature = "zstd-sys")]

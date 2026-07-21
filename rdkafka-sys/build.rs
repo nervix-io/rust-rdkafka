@@ -234,7 +234,9 @@ impl AwsLc {
 }
 
 fn needs_curl() -> bool {
-    env::var("CARGO_FEATURE_CURL").is_ok() || env::var("CARGO_FEATURE_CURL_STATIC").is_ok()
+    env::var("CARGO_FEATURE_CURL").is_ok()
+        || env::var("CARGO_FEATURE_CURL_RUSTLS").is_ok()
+        || env::var("CARGO_FEATURE_CURL_STATIC").is_ok()
 }
 
 #[cfg(not(feature = "cmake-build"))]
