@@ -16,7 +16,7 @@ rust-version = "1.74"
 num_enum = "0.7.3"
 libc = "0.2.172"
 openssl-sys = { version = "0.9.108", optional = true }
-aws-lc-sys = { version = "0.43.0", git = "https://github.com/nervix-io/aws-lc-rs.git", rev = "6332c54d1cf0535312a0e5cd73232f5d1e21f958", optional = true, features = ["ssl"] }
+aws-lc-sys = { version = "0.43.0", git = "https://github.com/justsmth/aws-lc-rs.git", rev = "a06191c2e203b39065dc5ce99ae244adf464cc5f", optional = true, features = ["ssl"] }
 libz-sys = { version = "1.1.22", optional = true }
 curl-sys = { version = "0.4.80", optional = true, default-features = false }
 zstd-sys = { version = "2.0.15", optional = true }
