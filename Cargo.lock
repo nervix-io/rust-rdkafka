@@ -312,8 +312,9 @@ dependencies = [
 
 [[package]]
 name = "aws-lc-sys"
-version = "0.43.0"
-source = "git+https://github.com/justsmth/aws-lc-rs.git?rev=a06191c2e203b39065dc5ce99ae244adf464cc5f#a06191c2e203b39065dc5ce99ae244adf464cc5f"
+version = "0.44.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f09fae7be8bb3174e05c6afdb34199e6dc0c7c04ba9fa237b1967adfbde27483"
 dependencies = [
  "bindgen",
  "cc",
@@ -1968,7 +1969,7 @@ dependencies = [
 name = "rdkafka-sys"
 version = "4.10.0+2.12.1"
 dependencies = [
- "aws-lc-sys 0.43.0",
+ "aws-lc-sys 0.44.0",
  "cmake",
  "curl-sys",
  "libc",
